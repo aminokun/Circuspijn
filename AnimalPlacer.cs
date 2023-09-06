@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace CircusPIJN
 {
-    internal class Sorter
+    public class AnimalPlacer
     {
+        public void  
     }
 }

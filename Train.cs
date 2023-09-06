@@ -13,5 +13,10 @@ namespace CircusPIJN
         {
             return wagons.Count;
         }
+
+        public void CreateWagon()
+        {
+            Wagon wagon = new Wagon();
+        }
     }
 }

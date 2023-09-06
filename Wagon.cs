@@ -8,6 +8,8 @@ namespace CircusPIJN
 {
     public class Wagon
     {
+        private readonly int maxSize = 10;
+
         List<Animal> animals = new List<Animal>();
 
         public bool CheckWeight(Animal otherAnimal)
@@ -18,7 +20,7 @@ namespace CircusPIJN
                 CurrentWeight += (int)animal.AnimalSize;
             }
 
-            if (CurrentWeight + (int)otherAnimal.AnimalSize <= 10)
+            if (CurrentWeight + (int)otherAnimal.AnimalSize <= maxSize)
             {
                 return true;
             }

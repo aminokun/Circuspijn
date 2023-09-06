@@ -8,6 +8,7 @@ namespace CircusPIJN
 {
     public class Animal
     {
+        public string Name { get; set; }
         public Size AnimalSize { get; set; }
 
         public Diet AnimalDiet { get; set; }
@@ -20,8 +21,9 @@ namespace CircusPIJN
 
             return false;
         }
-        public Animal(Size size, Diet diet)
+        public Animal(string _name, Size size, Diet diet)
         {
+            Name = _name;
             AnimalSize = size;
             AnimalDiet = diet;
         }
