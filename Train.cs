@@ -9,14 +9,28 @@ namespace CircusPIJN
     public class Train
     {
         List<Wagon> wagons = new List<Wagon>();
+        public void CreateWagon()
+        {
+            Wagon wagon = new Wagon();
+            wagons.Add(wagon);
+        }
         public int WagonCount()
         {
             return wagons.Count;
         }
-
-        public void CreateWagon()
+        public List<Wagon> GetWagons()
         {
-            Wagon wagon = new Wagon();
+            return wagons;
+        }
+        public void PrintWagons()
+        {
+            int wagonNumber = 1;
+            foreach (var wagon in wagons)
+            {
+                Console.WriteLine($"Wagon {wagonNumber}:");
+                wagon.PrintContents();
+                wagonNumber++;
+            }
         }
     }
 }

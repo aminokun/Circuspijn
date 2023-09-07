@@ -8,10 +8,29 @@ namespace CircusPIJN
 {
     public class Station
     {
-        public void CreateTrain()
+        private readonly Train train;
+        private readonly AnimalPlacer animalPlacer;
+
+        public Station()
         {
-            Console.WriteLine("                 _-====-__-======-__-========-_____-============-__\r\n               _(                                                 _)\r\n            OO(         CircusPijn Choo Chooooo!!                   )_\r\n           0  (_                                                   _)\r\n         o0     (_                                                _)\r\n        o         '=-___-===-_____-========-___________-===-=-=-='\r\n      .o                                _________\r\n     . ______          ______________  |         |      _____\r\n   _()_||__|| ________ |            |  |_________|   __||___||__\r\n  (bruh 2121| |      | |            | __Y______00_| |_         _|\r\n /-OO----OO\"\"=\"OO--OO\"=\"OO--------OO\"=\"OO-------OO\"=\"OO-------OO\"=P\r\n#####################################################################");
-            Train train = new Train();
+            train = new Train();
+            animalPlacer = new AnimalPlacer(train);
+        }
+
+        public void StartTrain(List<Animal> animals)
+        {
+            if (animals.Count != 0)
+            {
+                foreach (Animal animal in animals)
+                {
+                    animalPlacer.PlaceAnimalInWagon(animal);
+                }
+            train.PrintWagons();
+            }
+            else
+            {
+                Console.WriteLine("Train couldn't chooo chooo, no passengers!");
+            }
         }
     }
 }
