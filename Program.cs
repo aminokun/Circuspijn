@@ -8,6 +8,10 @@
             Animal Crocodile = new Animal("Crocodile", Size.Medium, Diet.Carnivore);
             Animal Siberian_Tiger = new Animal("Siberian Tiger", Size.Large, Diet.Carnivore);
 
+            //Animal Monkey = new Animal("\r\n               ',\r\n            .-`-,\\__\r\n              .\"`   `,\r\n            .'_.  ._  `;.\r\n        __ / `      `  `.\\ .--.\r\n       /--,| 0)   0)     )`_.-,)\r\n      |    ;.-----.__ _-');   /\r\n       '--./         `.`/  `\"`\r\n          :   '`      |.      \r\n          | \\     /  //         \r\n           \\ '---'  /'        \r\n            `------' \\  \r\n             _/       `--... \r\n", Size.Small, Diet.Herbivore);
+            //Animal Horse = new Animal("\r\n            .''\r\n  ._.-.___.' (`\\\r\n //(        ( `'\r\n'/ )\\ ).__. ) \r\n' <' `\\ ._/'\\\r\n   `   \\     \\ \r\n", Size.Medium, Diet.Herbivore);
+
+
             Animal Monkey = new Animal("Monkey", Size.Small, Diet.Herbivore);
             Animal Horse = new Animal("Horse", Size.Medium, Diet.Herbivore);
             Animal Elephant = new Animal("Elephant", Size.Large, Diet.Herbivore);
