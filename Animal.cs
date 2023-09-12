@@ -12,15 +12,6 @@ namespace CircusPIJN
         public Size AnimalSize { get; set; }
 
         public Diet AnimalDiet { get; set; }
-        public bool CanEat(Animal otherAnimal)
-        {
-            if (AnimalDiet == Diet.Carnivore && otherAnimal.AnimalSize <= AnimalSize)
-            {
-                return true;
-            }
-
-            return false;
-        }
         public Animal(string _name, Size size, Diet diet)
         {
             Name = _name;

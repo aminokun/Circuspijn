@@ -14,19 +14,6 @@ namespace CircusPIJN
         {
             this.train = train;
         }
-        //public void PlaceAnimalInWagon(Animal currentAnimal, Wagon wagon)
-        //{
-        //    if (currentAnimal.AnimalDiet == Diet.Carnivore && wagon.ContainsCarnivore() == false)
-        //    {
-        //        bool animalIsPlaced = true;
-        //        wagon.AddAnimal(currentAnimal);
-        //    }
-        //    else
-        //    {
-        //        train.CreateWagon();
-
-        //    }
-        //}
         public void PlaceAnimalInWagon(Animal currentAnimal)
         {
             bool animalIsPlaced = false;
@@ -54,7 +41,6 @@ namespace CircusPIJN
             {
                 train.CreateWagon();
                 PlaceAnimalInWagon(currentAnimal);
-                animalIsPlaced = true;
             }
         }
     }

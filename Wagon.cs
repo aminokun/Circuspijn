@@ -11,10 +11,11 @@ namespace CircusPIJN
         private readonly int maxSize = 10;
 
         List<Animal> animalsInWagon = new List<Animal>();
+        public int CurrentWeight { get; set; }
 
         public bool CheckWeight(Animal otherAnimal)
         {
-            int CurrentWeight = 0;
+            CurrentWeight = 0;
             foreach (var animal in animalsInWagon)
             {
                 CurrentWeight += (int)animal.AnimalSize;
@@ -22,6 +23,7 @@ namespace CircusPIJN
 
             if (CurrentWeight + (int)otherAnimal.AnimalSize <= maxSize)
             {
+                CurrentWeight += (int)otherAnimal.AnimalSize;
                 return true;
             }
             return false;
@@ -63,7 +65,7 @@ namespace CircusPIJN
         {
             foreach (var animal in animalsInWagon)
             {
-                Console.WriteLine($"    |{animal.Name}");
+                Console.WriteLine($"    |{animal.Name.PadRight(15)}|{animal.AnimalSize.ToString().PadRight(8)}|{animal.AnimalDiet} |");
             }
         }
     }

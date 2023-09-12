@@ -22,14 +22,22 @@ namespace CircusPIJN
         {
             return wagons;
         }
+
+        public void ClearWagons()
+        {
+            wagons.Clear();
+        }
         public void PrintWagons()
         {
             int wagonNumber = 1;
             foreach (var wagon in wagons)
             {
                 Console.WriteLine($"Wagon {wagonNumber}:");
+                Console.WriteLine($"Wagon weight {wagon.CurrentWeight}");
+
                 wagon.PrintContents();
                 wagonNumber++;
+                Console.Write("\n");
             }
         }
     }

@@ -15,14 +15,23 @@ namespace CircusPIJN
             return shuffledTestCase;
         }
 
-        public List<Animal> SortTestCase(List<Animal> shuffledTestCase)
+        public List<Animal> SortTestCaseLargeToSmall(List<Animal> shuffledTestCase)
         {
-            List<Animal> sortedTestCase = shuffledTestCase
+            List<Animal> sortedLargeToSmallTestCase = shuffledTestCase
                 .OrderByDescending(diet => diet.AnimalDiet)
                 .ThenByDescending(size => size.AnimalSize).ToList();
 
 
-            return sortedTestCase;
+            return sortedLargeToSmallTestCase;
+        }
+        public List<Animal> SortTestCaseSmallToLarge(List<Animal> shuffledTestCase)
+        {
+            List<Animal> sortedSmallToLargeTestCase = shuffledTestCase
+                .OrderByDescending(diet => diet.AnimalDiet)
+                .ThenBy(size => size.AnimalSize).ToList();
+
+
+            return sortedSmallToLargeTestCase;
         }
     }
 }
