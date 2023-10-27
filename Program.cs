@@ -30,7 +30,7 @@
             
             
             
-            List<Animal> shuffledTestCase = animalSorter.RandomizeTestCase(test_case_6);
+            List<Animal> shuffledTestCase = animalSorter.RandomizeTestCase(test_case_1);
 
             List<Animal> sortedLargeToSmallTestCase = animalSorter.SortTestCaseLargeToSmall(shuffledTestCase);
             List<Animal> sortedSmallToLargeTestCase = animalSorter.SortTestCaseSmallToLarge(shuffledTestCase);

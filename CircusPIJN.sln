@@ -5,6 +5,8 @@ VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrainCircus", "TrainCircus.csproj", "{D3E4F5E6-04AE-4513-974B-B3D74CEE417B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestCT", "..\UnitTestCT\UnitTestCT.csproj", "{F39FB21C-7130-4BA2-8F70-15E484459EE5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{D3E4F5E6-04AE-4513-974B-B3D74CEE417B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3E4F5E6-04AE-4513-974B-B3D74CEE417B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3E4F5E6-04AE-4513-974B-B3D74CEE417B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F39FB21C-7130-4BA2-8F70-15E484459EE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F39FB21C-7130-4BA2-8F70-15E484459EE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F39FB21C-7130-4BA2-8F70-15E484459EE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F39FB21C-7130-4BA2-8F70-15E484459EE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
